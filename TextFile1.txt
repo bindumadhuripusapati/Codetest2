@@ -1,0 +1,18 @@
+1.Select * from Customer where Name like 'Joe%'
+
+2 Select  p.name from Product p 
+  innerjoin orderproduct op on 
+ p.Productid=op.productid
+ innerjoin order o on op.orderid=o.orderid
+ innerjoin customer c on o.customerid=c.customerid
+ where c.Name="Joe" and 0.CreatedAT>'2016-01-11 00-00-00-000'
+ 3. Select sum(Product.price) as AmountSpent from Product p 
+  innerjoin orderproduct op on 
+ p.Productid=op.productid
+ innerjoin order o on op.orderid=o.orderid
+ innerjoin customer c on o.customerid=c.customerid
+ where c.Name="Joe" and 
+
+
+4.Select * from Customer left join Order 
+orderby OrderID
